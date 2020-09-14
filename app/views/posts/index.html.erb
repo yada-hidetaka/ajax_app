@@ -1,0 +1,8 @@
+<h1>Top page</h1>
+<%= link_to '投稿ページへ', 'posts/new'%>
+<% @posts.each do |post| %>
+ <div>
+  <%= post.memo %>
+  <%= post.created_at %>
+ </div>
+<% end %>
